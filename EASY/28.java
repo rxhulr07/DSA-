@@ -4,10 +4,10 @@ class Solution {
 
     for (int i = 0; i <= haystack.length() - needle.length(); i++) {
         int j = 0;
-        int temp = i;
+        int tem = i;
 
-        while (j < needle.length() && haystack.charAt(temp) == needle.charAt(j)) {
-            temp++;
+        while (j < needle.length() && haystack.charAt(tem) == needle.charAt(j)) {
+            tem++;
             j++;
         }
 
