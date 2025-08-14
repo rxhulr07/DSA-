@@ -44,6 +44,15 @@ public class QueueLs {
             return result;
 
         }
+
+        public static int peek(){
+            if(isEmpty()){
+                System.out.println("queue is empty");
+                return -1;
+            }
+        
+            return head.data;
+        }
     
 
         public static void main(String[] args) {
@@ -58,7 +67,10 @@ public class QueueLs {
                 System.out.println(temp.data);
                 temp = temp.next; 
             }
+            System.out.println(q.peek());
             
         }
+
+
     
 }
